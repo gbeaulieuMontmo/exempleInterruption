@@ -1,3 +1,9 @@
+// Exemple d'utilisation des interruptions sur une carte Arduino Mega
+// Broche 18 (interruption 5) configurée en entrée avec résistance de pull
+// up interne et un bouton connecté dessus. Un front descendant sur cette 
+// broche déclenche une interruption qui incrémente un compteur. Si le compteur 
+// dépasse 4, la LED sur la broche 13 s'allume.
+
 #include <Arduino.h>
 
 #define broche_INTER 18 // Broche 18 correspond à l'interruption 5 sur une carte Arduino Mega
